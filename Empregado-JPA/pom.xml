@@ -38,12 +38,6 @@
             <artifactId>postgresql</artifactId>
             <version>${postgresql.driver.version}</version>
         </dependency>
-        <!-- JSON-B API -->
-        <!-- <dependency>
-            <groupId>org.eclipse.parsson</groupId>
-            <artifactId>jakarta.json</artifactId>
-            <version>2.0.1</version>
-        </dependency> -->
         <!-- Yasson JSON Binding Provider -->
         <dependency>
             <groupId>org.eclipse</groupId>
