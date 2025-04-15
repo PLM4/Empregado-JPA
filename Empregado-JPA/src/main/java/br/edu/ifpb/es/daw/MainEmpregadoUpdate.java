@@ -2,23 +2,22 @@ package br.edu.ifpb.es.daw;
 
 import br.edu.ifpb.es.daw.dao.EmpregadoDAO;
 import br.edu.ifpb.es.daw.dao.impl.EmpregadoDAOImpl;
-import br.edu.ifpb.es.daw.model.Empregado;
+import br.edu.ifpb.es.daw.entities.Empregado;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
 import java.time.LocalDate;
-import java.util.List;
 
-public class MainEmpregadoGetByID {
+public class MainEmpregadoUpdate {
 
 	public static void main(String[] args) throws DawException {
 		try(EntityManagerFactory emf = Persistence.createEntityManagerFactory("daw")) {
 			EmpregadoDAO dao = new EmpregadoDAOImpl(emf);
 
-			// Primeiro salvar
+			//save
 			Empregado emp = new Empregado();
 
-			emp.setCpf("157-883-766-79");
+			emp.setCpf("157-883-766-04");
 			emp.setNome("Pedro");
 			emp.setSobreNome("Lucas");
 			emp.setDataNascimento(LocalDate.of(2004,12,28));
@@ -27,13 +26,14 @@ public class MainEmpregadoGetByID {
 
 			System.out.println(emp.toString());
 
-			// Depois recuperar pelo identificador
+			//update
 
-			List<Empregado> list = dao.getAll();
+			emp.setSobreNome("Melo");
 
-			Empregado resultado = list.get(list.size() - 1);
+			dao.update(emp);
 
-			System.out.println(emp.equals(resultado));
+			System.out.println(emp);
+
 		}
 	}
 

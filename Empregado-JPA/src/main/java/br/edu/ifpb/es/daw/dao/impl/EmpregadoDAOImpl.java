@@ -1,7 +1,7 @@
 package br.edu.ifpb.es.daw.dao.impl;
 
 import br.edu.ifpb.es.daw.dao.EmpregadoDAO;
-import br.edu.ifpb.es.daw.model.Empregado;
+import br.edu.ifpb.es.daw.entities.Empregado;
 import jakarta.persistence.EntityManagerFactory;
 
 

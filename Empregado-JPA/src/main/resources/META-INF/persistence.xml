@@ -6,18 +6,15 @@
 	<persistence-unit name="daw" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-		<class>br.edu.ifpb.es.daw.model.Empregado</class>
+		<class>br.edu.ifpb.es.daw.entities.Empregado</class>
 
 		<properties>
 
 			<!-- Database PostgreSQL-->
-			<!--
-			 -->
 			<property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver" />
-			<property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://ep-blue-bonus-a5xrnutq-pooler.us-east-2.aws.neon.tech/neondb?user=neondb_owner&amp;password=dWUOELn8av9h&amp;sslmode=require" />
-			<!--<property name="jakarta.persistence.jdbc.user" value="daw" />-->
-			<!--<property name="jakarta.persistence.jdbc.password" value="daw" />-->
-			<!-- /Database PostgreSQL-->
+			<property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://ep-summer-darkness-a4zi819g-pooler.us-east-1.aws.neon.tech/neondb?user=neondb_owner&amp;password=npg_YLruiCpTA78c&amp;sslmode=require" />
+			<property name="jakarta.persistence.jdbc.user" value="neondb_owner" />
+			<property name="jakarta.persistence.jdbc.password" value="npg_YLruiCpTA78c" />
 
 			<!-- HIBERNATE -->
 

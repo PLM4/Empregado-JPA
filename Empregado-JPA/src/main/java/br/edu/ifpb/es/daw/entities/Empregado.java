@@ -1,4 +1,4 @@
-package br.edu.ifpb.es.daw.model;
+package br.edu.ifpb.es.daw.entities;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
